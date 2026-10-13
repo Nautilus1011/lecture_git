@@ -219,3 +219,23 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
+
+# ---- lecture_git 固有の設定 ----
+# データセット・学習済みモデルはGit管理しない（ディレクトリだけ残す）
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
+*.pth
+*.pt
+*.onnx
+*.ckpt
+
+# OS
+.DS_Store
+
+# Claude Code の個人設定
+.claude/settings.local.json
+
+# 作業メモ
+tmp-*.md

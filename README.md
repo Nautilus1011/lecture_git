@@ -62,7 +62,17 @@
 ```text
 lecture_git/
 ├── README.md          # 本ドキュメント
+├── CLAUDE.md          # Claude Code 向けの運用ルール
 ├── .gitignore         # Python / 環境用除外設定
-├── hello.py           # 第2回：リモート同期確認用スクリプト
-└── (今後の演習ファイル群)
+├── .claude/           # Claude Code の設定・スキル
+├── src/               # 再利用するPythonモジュール
+│   └── dataloader.py  # 第2回：GitHub flow 演習用ダミーデータローダー
+├── scripts/           # 単体で実行するスクリプト
+│   └── hello.py       # 第2回：リモート同期確認用スクリプト
+├── tests/             # pytest のテスト
+├── experiment/        # 実験管理
+├── notebooks/         # Jupyter Notebook
+├── docs/              # 講義メモ・ドキュメント
+├── data/              # データセット（Git管理外）
+└── models/            # 学習済みモデル（Git管理外）
 ```
